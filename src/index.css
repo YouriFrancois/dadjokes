@@ -13,7 +13,14 @@
   padding: 10px;
   margin: 10px;
  }
- 
+
+ .bt2{
+  padding: 10px;
+  margin: 10px;
+  margin-left: 400px;
+
+ }
+
 .texti{
   display: 'flex'; 
   margin-left: 500px;

@@ -2,7 +2,7 @@
 
 import React,{useState,useEffect} from 'react';
 import { Link, useLocation } from "react-router-dom";
-import getjokes from "./API/jokes"
+import {getjokes} from "./API/jokes"
 import './index.css';
 
 function Jokes() {
@@ -30,7 +30,7 @@ function Jokes() {
         <Link  to= { jk.joke==="no Joke found"?"/":"/single"}
         state={{jokedata:jk.joke  }} className="link1"> 
         <li key={jk.id} className="lijokes">
-        {jk.joke}
+        <h1>{jk.joke}</h1>
         </li>
       </Link> 
       )}

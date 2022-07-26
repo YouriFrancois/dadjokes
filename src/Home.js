@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import { Link} from "react-router-dom";
-import getjokes from "./API/jokes"
+import {getjokes} from "./API/jokes"
 import './index.css';
 
 function Home() {
@@ -19,7 +19,7 @@ function Home() {
   return (
     <div className='back'>
 {/* ======================================= */}
-   
+   <div>    <h1>Home</h1> </div>
 {/* ======================================= */}
       <ul>
       {jokes.map((jk) => 

@@ -14,4 +14,19 @@ async function getjokes( about) {
 
   }
 
-  export default getjokes;
+
+  async function randomjokes( ) {
+    const response = await fetch('https://icanhazdadjoke.com/',{
+        headers:{
+            accept:"application/json" // to get json 
+        }
+    });
+    // waits until the request completes...
+    const jokes = await response.json()
+   // console.log(jokes)  
+   
+    return jokes.joke
+
+  }
+
+  export { getjokes , randomjokes};
