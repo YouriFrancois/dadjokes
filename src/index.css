@@ -17,7 +17,7 @@
  .bt2{
   padding: 10px;
   margin: 10px;
-  margin-left: 400px;
+  display: inline-block;
 
  }
 
@@ -43,11 +43,13 @@
 
 }
 .navli{
+  text-decoration: none;
   display: inline;
   margin: 20px;
-  color: black;
-  text-decoration: none;
-  /* //text-decoration: none; */
+
+ 
+  border:solid 2px #41403E;
+
 }
 
 
@@ -59,14 +61,17 @@
   background: #73AD21;
   padding: 20px;
   width: 900px;
-  height: 70px;
+  height: 90px;
   margin: 20px;
   text-align: center;
+  display: inline-block;
  
 }
 
 .link1{
   text-decoration: none;
+  display: inline-block;
+
 
 }
 /* ================================================ */
@@ -75,5 +80,11 @@
 .back{
   margin-top: 89px;
   background:lightcyan;
+  text-align: center;
+
 }
+.subnav{
+  text-align: center;
+}
+
 

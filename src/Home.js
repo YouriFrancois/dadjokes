@@ -19,9 +19,9 @@ function Home() {
   return (
     <div className='back'>
 {/* ======================================= */}
-   <div>    <h1>Home</h1> </div>
+   <div className='subnav'>    <h1>Home</h1> </div>
 {/* ======================================= */}
-      <ul>
+      <ul >
       {jokes.map((jk) => 
         <Link  to= { jk.joke==="no Joke found"?"/":"/single"}
         state={{jokedata:jk.joke  }} className="link1"> 

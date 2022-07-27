@@ -23,10 +23,10 @@ function Random() {
     return (
     <div className='back' >
       {/* ======================================= */}
-   <div>    <h1>Randome joke</h1> </div>
+   <div className='subnav'>    <h1>Random joke</h1> </div>
 {/* ======================================= */}
       {/* ======================================= */}
-     <h1 className='lijokes'>{jokes.joke} </h1>
+    <div> <h1 className='lijokes'>{jokes.joke} </h1></div>
       {/* ======================================= */}
     <button  className="bt2" onClick={handleClick} >Random   </button>
     </div>)

@@ -3,16 +3,19 @@ import {  Link } from "react-router-dom";
 const navbar= () =>{
   return (
   <div className='navmain'>
-    <li className='navli'>
-      <Link to="/" className='navli'>Home</Link>
-    </li>
-    <li  className='navli'>
-      <Link to="/search" className='navli'>Search</Link>
-    </li>
 
-    <li  className='navli'>
-      <Link to="/random" className='navli'>Random Joke</Link>
-    </li>
+      <Link to="/" className='link1'>
+        <li className='navli'>Home   </li>
+       </Link>
+ 
+      <Link to="/search" className='link1'>    
+       <li  className='navli'>Search </li>
+      </Link>
+
+      <Link to="/random" className='link1'>
+        <li  className='navli'> Random Joke  </li> 
+       </Link>
+
 
   </div>
   );

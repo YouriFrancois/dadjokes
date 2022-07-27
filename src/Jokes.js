@@ -23,14 +23,15 @@ function Jokes() {
   return (
     <div className='back'>
 {/* ======================================= */}
- 
+ <div className='subnav'><h1>Result for :" {jokedata} "</h1></div>
+ <div className='subnav'><h1>Number of Jokes :{jokes.length}</h1></div>
 {/* ======================================= */}
       <ul>
       {jokes.map((jk) => 
         <Link  to= { jk.joke==="no Joke found"?"/":"/single"}
         state={{jokedata:jk.joke  }} className="link1"> 
         <li key={jk.id} className="lijokes">
-        <h1>{jk.joke}</h1>
+     {jk.joke}
         </li>
       </Link> 
       )}
